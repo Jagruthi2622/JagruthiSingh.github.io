@@ -1,0 +1,195 @@
+
+	body{
+		margin: 0;
+	}
+	.container{
+		position: relative;
+		background-image: linear-gradient(black, rgb(8, 8, 70));
+		height: 100vh;
+		overflow: hidden;
+
+	}
+
+@keyframes fireworks{
+	0%{
+         transform: translateY(100vh);
+	}
+	50%{
+        width: 10px;
+		height: 10px;
+		opacity: 1;
+	}
+	75%{
+        width: 10px;
+		height: 10px;
+		opacity: 1;
+	}
+	100%{
+		width: 250px;
+		height: 250px;
+		opacity: 0;
+
+	}
+}
+
+	.fireworks, .fireworks2,.fireworks3,.fireworks4,.fireworks5,.fireworks6{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		background-image: radial-gradient(yellow, black),radial-gradient(red,black), radial-gradient(rgb(255, 0, 149), black),
+		                  radial-gradient(rgb(153, 0, 255), black), radial-gradient(rgb(255, 0, 149), black), radial-gradient(rgb(0, 255, 170), black),
+		                  radial-gradient(rgb(153, 0, 255), black), radial-gradient(rgb(255, 0, 149), black), radial-gradient(rgb(0, 174, 255), black),
+		                  radial-gradient(rgb(0, 255, 170), black), radial-gradient(rgb(153, 0, 255), black), radial-gradient(rgb(255, 0, 149), black),
+		                  radial-gradient(rgb(200, 255, 0), black), radial-gradient(rgb(0, 255, 170), black), radial-gradient(rgb(0, 140, 255), black);
+		                  
+             
+		background-position: 95% 30%, 0% 90%, 100% 10%, 10% 0%, 50% 50%, 30% 30%, 0% 50%, 80% 25%, 50% 10%, 100% 50%, 100% 100%, 80% 80%, 20% 85%, 0% 25%, 55% 65%; 
+		width: 10px;
+		height: 10px;
+		transform: translate(-50%, -50%);
+		background-size: 10px 10px;
+		background-repeat: no-repeat;
+		animation: fireworks 3s infinite;
+
+	}
+
+.fireworks2{
+	top: 20%;
+	left: 30%;
+	animation-delay: 0.5s;
+}
+
+.fireworks3{
+	top: 60%;
+	left: 70%;
+	animation-delay: 0.75s;
+}
+.fireworks4{
+	top: 10%;
+	left: 20%;
+	animation-delay: 0.5s;
+}
+
+.fireworks5{
+	top: 40%;
+	left: 60%;
+	animation-delay: 0.75s;
+}
+.fireworks6{
+	top: 30%;
+	right:20%;
+	animation-delay: 0.75s;
+}
+
+
+.wrap{
+	margin: 0;
+	text-align: center;
+	padding-top: 20vh;
+	font-size: 70px;
+	overflow: hidden;
+	animation: bg 5s linear infinite;
+	color: floralwhite;
+	letter-spacing: 3px;
+	font-family: "Allura", cursive;
+  font-weight: 400;
+  font-style: normal;
+  margin-right: 30px;
+ 
+}
+
+.text{
+	display: block;
+	width: 180px;
+	text-align: left;
+	height: 36px;
+	vertical-align: -2px;
+	font-size: 40px;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 270;
+  font-style: normal;
+  display: block;
+  line-height: 46px;
+  text-align: center;
+  margin-left: 8%;
+  margin-top: 5%;
+
+}
+
+.text > p{
+	font-size: 0px;
+	opacity: 0;
+	margin-left: -30;
+	position: absolute;
+	box-shadow: 0px 60px 25px -20px rgba(0, 0, 0, 0.5);
+
+}
+
+.text > p:nth-child(1){
+	animation: animation 5s linear infinite 0s;
+}
+
+.text > p:nth-child(2){
+	animation: animation 5s linear infinite 1s;
+
+}
+
+.text > p:nth-child(3){
+	animation: animation 5s linear infinite 2s;
+
+}
+
+@keyframes animation{
+	0%{
+		font-size: 0px;
+		opacity: 0px;
+		margin-left: -30px;
+		margin-top: 0px;
+		transform: rotate(-25deg);
+	}
+
+	3%{
+		opacity: 1;
+		transform: rotate(0deg);
+	}
+
+	5%{
+		font-size: inherit;
+		opacity: 1;
+		margin-left: 0px;
+		margin-top: 0px;
+	}
+
+	20%{
+		font-size: inherit;
+		opacity: 1;
+		margin-left: 0px;
+		margin-top: 0px;
+		transform: rotate(0deg);
+	}
+30%{
+		font-size: inherit;
+		opacity: 0.5;
+		margin-left: 20px;
+		margin-top: 100px;
+		transform: rotate(0deg);
+	}
+100%{
+		font-size: 0px;
+		opacity: 0px;
+		margin-left: -30px;
+		margin-top: 0px;
+		transform: rotate(15deg);
+	}
+
+
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,73 @@
+
+body{
+
+	background: #0c192c;
+
+}
+
+
+.image {
+  color: beige;
+  width: 550px;
+  border: 5px solid floralwhite;
+  padding: 50px;
+  margin-top: 0px;
+  margin-left: 30%;
+  text-align: center;
+  background: transparent;
+  position: relative;
+
+}
+
+.image, p, h1 {
+	font-size: 30px;
+	font-family: New Century Schoolbook, TeX Gyre Schola, serif;
+}
+
+
+.one{
+	font-size: 30px;
+	
+	
+}
+button, a{
+	text-decoration: none;
+	color: black;
+}
+
+button{
+	
+	border: 2px;
+	padding: 15px;
+	width: 13%;
+	height: 12%;
+	border-radius: 19px;
+	font-size: 28px;
+	color: black;
+	font-family: New Century Schoolbook, TeX Gyre Schola, serif;
+	margin-left: 40%;
+	margin-top: 25px;
+	text-align: center;
+  cursor: pointer;
+  transition: 0.8s;
+}
+
+button:hover{
+	
+	background-color: palegoldenrod;
+	color: charcoalblack;
+	transition: 0.8s;	
+}
+
+
+
+
+
+
+
+
+
+ 
+
+
+
